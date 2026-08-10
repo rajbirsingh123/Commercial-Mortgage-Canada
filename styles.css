@@ -407,6 +407,10 @@ h3 {
   gap: 12px;
 }
 
+.form-honey {
+  display: none;
+}
+
 .form-row {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -468,15 +472,6 @@ h3 {
 .lead-form .button {
   width: 100%;
   margin-top: 4px;
-}
-
-.form-message {
-  margin: 2px 0 0;
-  padding: 12px 14px;
-  border-left: 4px solid var(--gold);
-  color: var(--navy);
-  background: #fff7df;
-  font-weight: 800;
 }
 
 .trust-bar {

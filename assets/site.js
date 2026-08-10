@@ -18,16 +18,3 @@ if ("IntersectionObserver" in window) {
     revealObserver.observe(item);
   });
 }
-
-document.querySelectorAll(".lead-form").forEach((form) => {
-  form.addEventListener("submit", (event) => {
-    let message = form.querySelector(".form-message");
-    if (!message) {
-      message = document.createElement("p");
-      message.className = "form-message";
-      form.appendChild(message);
-    }
-
-    message.textContent = "Your email app will open with the financing request details.";
-  });
-});
