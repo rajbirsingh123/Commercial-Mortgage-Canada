@@ -21,8 +21,6 @@ if ("IntersectionObserver" in window) {
 
 document.querySelectorAll(".lead-form").forEach((form) => {
   form.addEventListener("submit", (event) => {
-    event.preventDefault();
-
     let message = form.querySelector(".form-message");
     if (!message) {
       message = document.createElement("p");
@@ -30,6 +28,6 @@ document.querySelectorAll(".lead-form").forEach((form) => {
       form.appendChild(message);
     }
 
-    message.textContent = "Thank you. Your financing request details are ready for review.";
+    message.textContent = "Your email app will open with the financing request details.";
   });
 });
