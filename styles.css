@@ -22,6 +22,48 @@ html {
   scroll-behavior: smooth;
 }
 
+/* Broker information */
+.footer-column p {
+  margin: 12px 0 4px;
+}
+
+.footer-column p strong {
+  font-size: 16px;
+}
+
+/* Footer bottom layout */
+.footer-bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+/* Powered by Pineapple */
+.powered-by {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+}
+
+.powered-by img {
+  width: 100px;
+  height: auto;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .footer-links {
+    gap: 12px;
+  }
+}
+
 body {
   margin: 0;
   color: var(--charcoal);
@@ -1258,6 +1300,49 @@ h3 {
   font-weight: 800;
 }
 
+.nav-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 2px;
+}
+
+.nav-utility {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 12px;
+  min-height: 22px;
+  color: var(--ink-soft);
+  font-size: 0.68rem;
+  font-weight: 700;
+}
+
+.nav-utility > a {
+  padding: 2px 0;
+}
+
+.nav-utility > a:hover {
+  color: var(--steel);
+}
+
+.nav-powered-by {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  white-space: nowrap;
+}
+
+.nav-powered-by a {
+  display: inline-flex;
+  padding: 0;
+}
+
+.nav-powered-by img {
+  width: 82px;
+  height: auto;
+}
+
 @keyframes pageFade {
   from {
     opacity: 0;
@@ -1331,10 +1416,15 @@ h3 {
     padding: 16px 0;
   }
 
-  .nav-links {
+  .nav-actions {
+    width: 100%;
+    align-items: flex-start;
+  }
+
+  .nav-utility {
     width: 100%;
     justify-content: flex-start;
-    overflow-x: auto;
+    flex-wrap: wrap;
   }
 
   .hero {
